@@ -9,22 +9,36 @@ const port = process.env.PORT;
 
 server.get('/', (req, res)=>{
     res.send(`
-    <table>
+    <center>
+    <table border=1>
     
     <tr>
+        <th>Nombre</th>
+        <th>Cedula</th>
+        <th>Edad</th>
+    </tr>
+
+    <tr>
     
-        <th></th>
+    <td>${process.env.NOMBRE}</td>
+    <td>${process.env.CEDULA}</td>
+    <td>${process.env.EDAD}</td>
     
+    </tr>    
+
+    <tr>
+    <td>${process.env.IMG}</td>
     </tr>
     
     
-    
     </table>
+    </center>
+
     `);
 })
 
 
 
 server.listen(port, ()=>{
-    console.log(`Estoy en el puerto ${port}`.bgBlue.underline);
+    console.log(`Estoy en el puerto ${port}`.bgGray.underline);
 })
