@@ -27,7 +27,7 @@ server.get('/', (req, res)=>{
     </tr>    
 
     <tr>
-    <td>${process.env.IMG}</td>
+    <td> <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blted35cecd1a228f6b/60dabb56e1461d39eb87f143/7cf07b7505ef748873f411e9606e0aa667f63c62.jpg ">${process.env.IMG}</td>
     </tr>
     
     
